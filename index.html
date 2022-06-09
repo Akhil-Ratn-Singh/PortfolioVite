@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./input.css">
+    <title>Portfolio Vite</title>
+</head>
+
+<body class="font-nunito">
+    <!-- intro section  -->
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-300 relative overflow-hidden">
+        <!-- navbar -->
+        <nav class="w-full fixed top-0 bg-white z-20">
+            <div class="container mx-auto py-5 flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <img class='w-8' src="./img/logo.png" alt="logo">
+                    <span class="text-2xl font-bold text-indigo-900">Test</span>
+                </div>
+                <ul class="hidden md:flex space-x-10 text-gray-800 text-sm font-bold uppercase">
+                    <li class="hover:text-gray-500">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#">About Me</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#">Work</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <img class="hidden md:block w-5 cursor-pointer" src="./img/moon.png" alt="moon">
+                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-10 mr-4">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+                <ul id="menu"
+                    class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+                    <li class="">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="#">About Me</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Work</a>
+                    </li>
+                    <li class="">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar content -->
+        <!-- image -->
+        <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover" src="./img/man.png" alt="">
+        <!-- circle  -->
+        <div class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"></div>
+        <!-- animated text  -->
+        <!-- other text  -->
+        <div></div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
